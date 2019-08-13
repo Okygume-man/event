@@ -35,7 +35,7 @@
         <div class="navbar-brand"><%= link_to "Home", root_path %></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Event</a>
+        <a class="nav-link" href="<%= events_path %>">Event</a>
       </li>
      
       <li class="nav-item dropdown">
@@ -43,8 +43,8 @@
          Ton profil
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Vois ton profil</a>
-          <a class="dropdown-item" href="<%=edit_user_registration_path%>">Edite ton compte</a>
+          <a class="dropdown-item" href="<%=user_path(current_user.id)%>">Voir son profil</a>
+          <a class="dropdown-item" href="<%=edit_user_registration_path%>">Editer son compte</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>

@@ -1,20 +1,16 @@
 
-<p>
+<p><h1><Salut </h1>
+     
+    <p> Tu trouvera ici les évènements qui existent </p>
   <% if user_signed_in? %>
   	<div class="container">
   		<div class="row">
     		<div class="col-lg-6 offset-sm-1">
       <br><br><br>
     
-     <li>
 
-     # <%= current_user.email %>
-      Voici ton email : <%= current_user.email %>
-
-    </li>
-		<br/>
     <li>
-      <%= link_to "Secret page", static_pages_secret_path %>
+      <%= link_to "Evènement", events_path %>
     </li>
 		<br/>
     <li>
