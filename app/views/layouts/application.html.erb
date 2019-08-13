@@ -25,7 +25,7 @@
 
     <% if user_signed_in?%>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Event de fou</a>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -45,7 +45,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<%=user_path(current_user.id)%>">Voir son profil</a>
           <a class="dropdown-item" href="<%=edit_user_registration_path%>">Editer son compte</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="<%=static_pages_secret_path%>">Essaye on sait jamais :)</a>
         </div>
       </li>
     </ul>
