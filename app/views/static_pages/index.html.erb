@@ -1,22 +1,40 @@
-<h1>Bienvenue</h1>
+
 <p>
   <% if user_signed_in? %>
-    <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
-      <li>
-      Voici ton email : <%= current_user.email %>
-    </li>
+  	<div class="container">
+  		<div class="row">
+    		<div class="col-lg-6 offset-sm-1">
+      <br><br><br>
+    
+     <li>
 
+     # <%= current_user.email %>
+      Voici ton email : <%= current_user.email %>
+
+    </li>
+		<br/>
     <li>
       <%= link_to "Secret page", static_pages_secret_path %>
     </li>
-
+		<br/>
     <li>
       <%= link_to "Edit email / password", edit_user_registration_path %>
     </li>
 
-  <% else %>
-    <%= link_to "S'inscrire", new_user_registration_path %>
+      
+   			</div>
+ 		 </div>
+	</div>
 
-	<%= link_to 'Se connecter', new_user_session_path %>
+
+  <% else %>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  	<h1 class="display-4">Bienvenue sur notre site de création d'évènement</h1>
+  	<p class="lead">Si tu recherches des évènements sur Lyon c'est ici !!</p>
+    <button type="button" class="btn btn-outline-secondary"><%= link_to "S'inscrire", new_user_registration_path %></button>
+
+	<button type="button" class="btn btn-outline-primary"><%= link_to 'Se connecter', new_user_session_path %></button>
   <% end %>	
 </p>
