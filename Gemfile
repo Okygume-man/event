@@ -62,14 +62,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-group :test do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem 'rspec-rails', '2.6.1'
-  gem 'webrat', '0.7.1'
-end
 
-group :development, do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem 'rspec-rails', '2.6.1'
-end
 
